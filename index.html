@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SkillVerse V1</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>SkillVerse</h1>
+
+<div class="card">
+<h2>Profile</h2>
+<input id="name" placeholder="Enter name">
+<button onclick="saveProfile()">Save</button>
+<p id="welcome"></p>
+</div>
+
+<div class="card">
+<h2>Level System</h2>
+<p id="xp">XP: 0</p>
+<p id="level">Level: 1</p>
+<button onclick="gainXP(50)">Complete Mission (+50 XP)</button>
+</div>
+
+<div class="card">
+<h2>6 Skill Trees</h2>
+<ul>
+<li>Technology Awareness</li>
+<li>Creativity</li>
+<li>Memory</li>
+<li>Decision Making</li>
+<li>Leadership</li>
+<li>Emotional Intelligence</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Daily Mission</h2>
+<p id="mission"></p>
+</div>
+
+<div class="card">
+<h2>Quiz Engine</h2>
+<p id="question"></p>
+<button onclick="answer(true)">True</button>
+<button onclick="answer(false)">False</button>
+<p id="result"></p>
+</div>
+
+<div class="card">
+<h2>Badges</h2>
+<ul id="badges"></ul>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
